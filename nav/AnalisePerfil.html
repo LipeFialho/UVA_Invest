@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UVA Invest | Analise de Perfil</title>
+    <link rel="stylesheet" type="text/css" href="../style/analiseperfil.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
+</head>
+
+<body>
+
+    <form class="form" action="/action_page.php">
+
+        <div class="question">
+            <p class="question-form">Qual e o seu objetivo de investimento?</p>
+              <input type="radio" id="rb1" name="questao1">
+              <label>Preservacao do capital e geracao de renda.</label>
+              <input type="radio" id="rb2" name="questao1">
+              <label>Equilibrio entre preservacao do capital e geracao de renda.</label>
+              <input type="radio" id="rb3" name="questao1">
+              <label>Maximizacao do retorno financeiro</label>
+        </div>
+
+        <div class="question">
+            <p class="question-form">Qual e o seu horizonte de investimento?</p>
+              <input type="radio" id="rb4" name="questao2">
+              <label>Curto prazo (ate 1 ano).</label>
+              <input type="radio" id="rb5" name="questao2">
+              <label>Medio prazo (1 a 3 anos).</label>
+              <input type="radio" id="rb6" name="questao2">
+              <label>Longo prazo (mais de 3 anos).</label>
+        </div>
+
+        <div class="question">
+            <p class="question-form">Qual e a sua tolerancia ao risco?</p>
+              <input type="radio" id="rb7" name="questao3">
+              <label>Baixa tolerancia ao risco.</label>
+              <input type="radio" id="rb8" name="questao3">
+              <label>Tolerancia moderada ao risco.</label>
+              <input type="radio" id="rb9" name="questao3">
+              <label>Alta tolerancia ao risco.</label>
+        </div>
+
+        <div class="question">
+            <p class="question-form">Qual e a sua experiencia em investimentos?</p>
+              <input type="radio" id="rb10" name="questao4">
+              <label>Pouca ou nenhuma experiencia em investimentos.</label>
+              <input type="radio" id="rb11" name="questao4">
+              <label>Alguma experiencia em investimentos.</label>
+              <input type="radio" id="rb12" name="questao4">
+              <label>Experiencia significativa em investimentos.</label>
+        </div>
+
+        <div class="question">
+            <p class="question-form">Quais sao as suas expectativas de retorno sobre os investimentos?</p>
+              <input type="radio" id="rb13" name="questao5">
+              <label>Retorno modesto e consistente.</label>
+              <input type="radio" id="rb14" name="questao5">
+              <label>Retorno razoavel e consistente.</label>
+              <input type="radio" id="rb15" name="questao5">
+              <label>Retorno significativo, memsmo que com maior volatilidade.</label>
+        </div>
+
+    </form>
+
+    <button id="checkFormBtn" class="button-check">Feito</button>
+    <script>
+        var rb1 = document.getElementById('rb1');
+        var rb2 = document.getElementById('rb2');
+        var rb3 = document.getElementById('rb3');
+        var rb4 = document.getElementById('rb4');
+        var rb5 = document.getElementById('rb5');
+        var rb6 = document.getElementById('rb6');
+        var rb7 = document.getElementById('rb7');
+        var rb8 = document.getElementById('rb8');
+        var rb9 = document.getElementById('rb9');
+        var rb10 = document.getElementById('rb10');
+        var rb11 = document.getElementById('rb11');
+        var rb12 = document.getElementById('rb12');
+        var rb13 = document.getElementById('rb13');
+        var rb14 = document.getElementById('rb14');
+        var rb15 = document.getElementById('rb15');
+
+        var soma = 0;
+
+        function checkForm(){
+            if (rb1.checked) {soma = soma + 1;}
+            if (rb2.checked) {soma = soma + 2;}
+            if (rb3.checked) {soma = soma + 3;}
+            if (rb4.checked) {soma = soma + 1;}
+            if (rb5.checked) {soma = soma + 2;}
+            if (rb6.checked) {soma = soma + 3;}
+            if (rb7.checked) {soma = soma + 1;}
+            if (rb8.checked) {soma = soma + 2;}
+            if (rb9.checked) {soma = soma + 3;}
+            if (rb10.checked) {soma = soma + 1;}
+            if (rb11.checked) {soma = soma + 2;}
+            if (rb12.checked) {soma = soma + 3;}
+            if (rb13.checked) {soma = soma + 1;}
+            if (rb14.checked) {soma = soma + 2;}
+            if (rb15.checked) {soma = soma + 3;}
+
+            if(soma <= 6){window.location.href = "Conservador.html";}
+            else if (soma >= 7 && soma <= 9) {window.location.href = "Moderado1.html";}
+            else if (soma >= 10 && soma <= 13) {window.location.href = "Moderado2.html";}
+            else if (soma >= 14) {window.location.href = "Agressivo.html";}
+        }
+
+        var btn = document.getElementById("checkFormBtn");
+        btn.addEventListener("click", checkForm);
+        
+
+    </script>
+
+</body>
+
+</html>
