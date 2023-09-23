@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>UVA Invest</title>
-    <link rel="stylesheet" type="text/css" href="/style/index.css" />
-    <link rel="stylesheet" type="text/css" href="/style/header.css" />
+    <title>UVA Invest | Conservador</title>
+    <link rel="stylesheet" type="text/css" href="../style/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
 </head>
+
 <body>
-    
+    <div class="container">
 
-    <a href="/nav/AnalisePerfil">Clique para realizar sua Analise de Perfil</a>
+        <div class="anuncia-perfil">
+            <p>Seu perfil de investidor é: </p>
+            <span> Conservador!</span>
+        </div>
 
+        <div class="resumo-perfil">
+            <p>
+                O investidor conservador prefere investir em opções que oferecem baixo risco. Isso acaba influenciando
+                seus objetivos, que normalmente estão focados em não perder nada e, assim, preservar seu patrimônio.
+                Diante desse cenário, é comum que o investidor conservador seja alguém com mais de 40 anos, que preza
+                pela segurança do que acumulou durante os anos, ou então é alguém que está começando agora, então tem
+                mais medo de se arriscar por causa da falta de experiência.
+            </p>
+        </div>
+
+        <div class="estrategia">
+            <p id="txtEstrategia">
+                Para o seu perfil, a estratégia de investimento mais adequada consiste em:<br>
+                40% em Títulos Públicos<br>
+                20% em LCI/LCA/LC<br>
+                20% em CDB<br>
+                20% em Fundos de Investimentos em Renda Fixa<br><br>
+                Totalizando 100% do capital aplicável!
+            </p>
+        </div>
+
+        <div class="anuncia-chatgpt">
+            <p>
+                Caso queira saber mais a respeito da sua estratégia, informe-se com a Inteligência Artificial abaixo!
+            </p>
+        </div>
+
+        <button id="btnIniciaChat" class="btnIniciaChat" onclick="IniciaChat()">Consultar</button>
+        <form id="consulta-chat" class="consulta-chat">
+            <textarea id="txt-area" class="txt-consulta"></textarea>
+            <input type="submit" id="btnSendChat" class="btnSendChat">
+        </form>
+
+        <div id="pergunta">
+
+        </div>
+
+        <div id="resposta">
+
+        </div>
+    </div>
+
+    <script src="../js/ChatGptAPI.js"></script>
 </body>
+
 </html>

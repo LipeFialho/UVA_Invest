@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>UVA Invest</title>
-    <link rel="stylesheet" type="text/css" href="/style/index.css" />
-    <link rel="stylesheet" type="text/css" href="/style/header.css" />
+    <title>UVA Invest | Agressivo</title>
+    <link rel="stylesheet" type="text/css" href="../style/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
 </head>
+
 <body>
+    <div class="container">
+        
+        <div class="anuncia-perfil">
+            <p>Seu perfil de investidor é: </p>
+            <span> Agressivo!</span>
+        </div>
+
+        <div class="resumo-perfil">
+            <p>
+                O investidor agressivo, ou arrojado, tem alta tolerância a riscos e baixa necessidade de liquidez em
+                curto ou médio prazo. Além disso, está disposto a aceitar as oscilações características dos mercados de
+                risco e aceita possíveis perdas de parte do capital investido na busca de retornos diferenciados a longo
+                prazo.
+            </p>
+        </div>
+
+        <div class="estrategia">
+            <p id="txtEstrategia">
+                Para o seu perfil, a estratégia de investimento mais adequada consiste em:<br>
+                25% em CDB<br>
+                25% Fundos de Investimentos em Renda Fixa<br> 
+                15% em Fundos de Investimentos Cambial<br> 
+                20% em Ações/ETF<br>
+                15% em Fundos de Investimento no Exterior<br><br>
+                Totalizando 100% do capital aplicável!
+            </p>
+        </div>
+
+        <div class="anuncia-chatgpt">
+            <p>
+                Caso queira saber mais a respeito da sua estratégia, informe-se com a Inteligência Artificial abaixo!
+            </p>
+        </div>
+        
+        <button id="btnIniciaChat" class="btnIniciaChat" onclick="IniciaChat()">Consultar</button>
+        <form id="consulta-chat" class="consulta-chat">
+            <textarea id="txt-area" class="txt-consulta"></textarea>
+            <input type="submit" id="btnSendChat" class="btnSendChat">
+        </form>
+
+        <div id="pergunta">
+
+        </div>
+
+        <div id="resposta">
+
+        </div>
+    </div>
     
-
-    <a href="/nav/AnalisePerfil">Clique para realizar sua Analise de Perfil</a>
-
+    <script src="../js/ChatGptAPI.js"></script>
 </body>
+
 </html>

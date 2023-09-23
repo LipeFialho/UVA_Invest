@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>UVA Invest</title>
-    <link rel="stylesheet" type="text/css" href="/style/index.css" />
-    <link rel="stylesheet" type="text/css" href="/style/header.css" />
+    <title>UVA Invest | Moderado II</title>
+    <link rel="stylesheet" type="text/css" href="../style/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="../style/header.css" />
 </head>
+
 <body>
-    
+    <div class="container">
 
-    <a href="/nav/AnalisePerfil">Clique para realizar sua Analise de Perfil</a>
+        <div class="anuncia-perfil">
+            <p>Seu perfil de investidor é: </p>
+            <span> Moderado II !</span>
+        </div>
 
+        <div class="resumo-perfil">
+            <p>
+                O investidor moderado geralmente já têm um maior conhecimento do mercado financeiro. Esse perfil já
+                aceita algum tipo de risco em seus aportes em busca de uma maior rentabilidade. Em sua carteira
+                geralmente há Fundos Imobiliários e algumas ações, mas ele também não abre mão da sua segurança e mantém
+                parte dos seus investimentos em renda fixa.
+            </p>
+        </div>
+
+        <div class="estrategia">
+            <p id="txtEstrategia">
+                Para o seu perfil, a estratégia de investimento mais adequada consiste em:<br>
+                20% em LCI/LCA/LC<br>
+                10% em CDB<br>
+                10% em Fundos de Investimentos em Renda Fixa<br>
+                20% em Debêntures<br>
+                20% em Fundos Imobiliários<br>
+                20% em Fundos de Investimentos Multimercados<br><br>
+                Totalizando 100% do capital aplicável!
+            </p>
+        </div>
+
+        <div class="anuncia-chatgpt">
+            <p>
+                Caso queira saber mais a respeito da sua estratégia, informe-se com a Inteligência Artificial abaixo!
+            </p>
+        </div>
+
+        <button id="btnIniciaChat" class="btnIniciaChat" onclick="IniciaChat()">Consultar</button>
+        <form id="consulta-chat" class="consulta-chat">
+            <textarea id="txt-area" class="txt-consulta"></textarea>
+            <input type="submit" id="btnSendChat" class="btnSendChat">
+        </form>
+
+        <div id="pergunta">
+
+        </div>
+
+        <div id="resposta">
+
+        </div>
+    </div>
+
+    <script src="../js/ChatGptAPI.js"></script>
 </body>
+
 </html>
