@@ -17,7 +17,7 @@ function IniciaChat(){
 const divConsultaChat = document.getElementById('consulta-chat');
 
 // Chave da API do OPENAI
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 // Verificar se tem a chave
 if(OPENAI_API_KEY === ""){
