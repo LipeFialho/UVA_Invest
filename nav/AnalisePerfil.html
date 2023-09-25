@@ -10,82 +10,106 @@
 
 <body>
     <header>
-    
+
         <div class="container-header">
             <div class="logo-invest">
                 <img class="logo-invest-img" src="../img/LogoUvaInvest.png">
             </div>
-    
+
             <div class="page-title">
-                <p class="purples">Página Inicial</p>
+                <p class="purples">Análise do Perfil</p>
             </div>
-    
+
             <div class="logo-uva">
                 <img class="logo-uva-img" src="../img/logoUva.png">
             </div>
         </div>
-    
+
     </header>
+    <div class="resume-page">
+        Preencha o formulário para obter seu perfil de investidor e sua estratégia de investimentos!
+    </div>
 
     <form class="form" action="/action_page.php">
 
         <div class="question">
-            <p class="question-form">Qual e o seu objetivo de investimento?</p>
-              <input type="radio" id="rb1" name="questao1">
-              <label>Preservacao do capital e geracao de renda.</label>
-              <input type="radio" id="rb2" name="questao1">
-              <label>Equilibrio entre preservacao do capital e geracao de renda.</label>
-              <input type="radio" id="rb3" name="questao1">
-              <label>Maximizacao do retorno financeiro</label>
+            <p class="question-form">Qual é o seu objetivo de investimento?</p>
+
+            <div class="question-inputs"> 
+                <input type="radio" id="rb1" name="questao1">
+                <label>Preservação do capital e geração de renda.</label>
+                <input type="radio" id="rb2" name="questao1">
+                <label>Equilíbrio entre preservação do capital e geração de renda.</label>
+                <input type="radio" id="rb3" name="questao1">
+                <label>Maximização do retorno financeiro</label>
+            </div>
+
         </div>
 
         <div class="question">
-            <p class="question-form">Qual e o seu horizonte de investimento?</p>
-              <input type="radio" id="rb4" name="questao2">
-              <label>Curto prazo (ate 1 ano).</label>
-              <input type="radio" id="rb5" name="questao2">
-              <label>Medio prazo (1 a 3 anos).</label>
-              <input type="radio" id="rb6" name="questao2">
-              <label>Longo prazo (mais de 3 anos).</label>
+            <p class="question-form">Qual é o seu horizonte de investimento?</p>
+
+            <div class="question-inputs">
+                <input type="radio" id="rb4" name="questao2">
+                <label>Curto prazo (até 1 ano).</label>
+                <input type="radio" id="rb5" name="questao2">
+                <label>Médio prazo (1 a 3 anos).</label>
+                <input type="radio" id="rb6" name="questao2">
+                <label>Longo prazo (mais de 3 anos).</label>
+            </div>
+
         </div>
 
         <div class="question">
-            <p class="question-form">Qual e a sua tolerancia ao risco?</p>
-              <input type="radio" id="rb7" name="questao3">
-              <label>Baixa tolerancia ao risco.</label>
-              <input type="radio" id="rb8" name="questao3">
-              <label>Tolerancia moderada ao risco.</label>
-              <input type="radio" id="rb9" name="questao3">
-              <label>Alta tolerancia ao risco.</label>
-        </div>
-
-        <div class="question">
-            <p class="question-form">Qual e a sua experiencia em investimentos?</p>
-              <input type="radio" id="rb10" name="questao4">
-              <label>Pouca ou nenhuma experiencia em investimentos.</label>
-              <input type="radio" id="rb11" name="questao4">
-              <label>Alguma experiencia em investimentos.</label>
-              <input type="radio" id="rb12" name="questao4">
-              <label>Experiencia significativa em investimentos.</label>
-        </div>
-
-        <div class="question">
-            <p class="question-form">Quais sao as suas expectativas de retorno sobre os investimentos?</p>
-              <input type="radio" id="rb13" name="questao5">
-              <label>Retorno modesto e consistente.</label>
-              <input type="radio" id="rb14" name="questao5">
-              <label>Retorno razoavel e consistente.</label>
-              <input type="radio" id="rb15" name="questao5">
-              <label>Retorno significativo, memsmo que com maior volatilidade.</label>
-        </div>
+            <p class="question-form">Qual é a sua tolerância ao risco?</p>
         
+            <div class="question-inputs">
+                <input type="radio" id="rb7" name="questao3">
+                <label>Baixa tolerância ao risco.</label>
+                <input type="radio" id="rb8" name="questao3">
+                <label>Tolerância moderada ao risco.</label>
+                <input type="radio" id="rb9" name="questao3">
+                <label>Alta tolerância ao risco.</label>
+            </div>
+
+        </div>
+
+        <div class="question">
+            <p class="question-form">Qual é a sua experiência em investimentos?</p>
+        
+            <div class="question-inputs">
+                <input type="radio" id="rb10" name="questao4">
+                <label>Pouca ou nenhuma experiência em investimentos.</label>
+                <input type="radio" id="rb11" name="questao4">
+                <label>Alguma experiência em investimentos.</label>
+                <input type="radio" id="rb12" name="questao4">
+                <label>Experiência significativa em investimentos.</label>
+            </div>
+
+        </div>
+
+        <div class="question">
+            <p class="question-form">Quais são as suas expectativas de retorno sobre os investimentos?</p>
+
+            <div class="question-inputs">
+                <input type="radio" id="rb13" name="questao5">
+                <label>Retorno modesto e consistente.</label>
+                <input type="radio" id="rb14" name="questao5">
+                <label>Retorno razoável e consistente.</label>
+                <input type="radio" id="rb15" name="questao5">
+                <label>Retorno significativo, memsmo que com maior volatilidade.</label>
+            </div>
+        </div>
+
     </form>
 
-    <button id="checkFormBtn" onclick="checkForm()" class="button-check">Feito</button>
     
 
+    <div class="container-btn">
+        <button class="button" style="vertical-align:middle" id="checkFormBtn" onclick="checkForm()"><span>Feito</span></button>
+    </div>
 
-    
+
     <script src="../js/setPerfil.js"></script>
 </body>
 

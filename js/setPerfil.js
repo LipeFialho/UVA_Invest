@@ -23,6 +23,7 @@ function checkForm() {
     else if (rb3.checked) { soma = soma + 3; }
     else {
         alert("A primeira pergunta não foi respondida");
+        soma = 0;
         return false;
     }
 
@@ -31,6 +32,7 @@ function checkForm() {
     else if (rb6.checked) { soma = soma + 3; }
     else {
         alert("A segunda pergunta não foi respondida.");
+        soma = 0;
         return false;
     }
 
@@ -39,6 +41,7 @@ function checkForm() {
     else if (rb9.checked) { soma = soma + 3; }
     else {
         alert("A terceira pergunta não foi respondida.")
+        soma = 0;
         return false;
     }
 
@@ -47,6 +50,7 @@ function checkForm() {
     else if (rb12.checked) { soma = soma + 3; }
     else {
         alert("A quarta pergunta não foi respondida");
+        soma = 0;
         return false;
     }
 
@@ -55,6 +59,7 @@ function checkForm() {
     else if (rb15.checked) { soma = soma + 3; }
     else {
         alert("A quinta pergunta não foi respondida");
+        soma = 0;
         return false;
     }
 

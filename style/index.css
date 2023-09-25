@@ -11,19 +11,7 @@
     line-height: 1.6;
 }
 
-/* .link-analise a{
-    color: #004b78;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: justify;
-    letter-spacing: 2.2px;
-    text-transform: uppercase;
-    text-decoration: none;
-}*/
+
 .link-analise{
     display: flex;
     width: 80%;

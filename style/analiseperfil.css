@@ -1,4 +1,93 @@
-.form{}
-.question{}
-.question-form{}
-.button-check{}
+.button-check {}
+.resume-page{
+    color: #004b78;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 1% auto 0 auto;
+    text-align: justify;
+    letter-spacing: 4.2px;
+    line-height: 1.6;
+}
+
+
+.form {
+    color: #004b78;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* display: flex; */
+    width: 100%;
+    justify-content: center;
+    margin: 1% auto 0 auto;
+
+}
+
+.form label {
+    margin-right: 3%;
+}
+
+.question{
+    margin-top: 5%;
+}
+
+.question-form {
+    text-align: center;
+    margin-bottom: 2%;
+    text-shadow: 1.5px 0.5px 0.5px rgba(255,208,0,1);    
+}
+
+.question-inputs {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-btn{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 5% auto 0 auto;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffd000;
+    border: none;
+    color: #004b78;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    padding: 8px 35px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
