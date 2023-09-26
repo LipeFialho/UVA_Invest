@@ -7,7 +7,7 @@ function IniciaChat(){
     btnIniciaChat.style.display="none";
     divConsultaChat.style.display="flex";
 
-    txtArea.value = "Analisando que estamos em um cenário de pandemia, qual é a melhor forma de seguir a estratégia de investimento a seguir: \n" + '"' + txtEstrategia.innerText + '"'; 
+    txtArea.value = 'Tendo em vista o contexto atual do mundo:\n "- Guerra Russia x Ucrania (2022- dias atuais); \n - Aumento da dívida pública americana, devido à pademia (2020 -2022); \n - Taxa de juros americana  em 5,25% (2023); \n - Taxa média de juros america nos ultimos 10 anos em 4,27%; \n - Inflação brasil acumulado no ano (2023): 3,23%; \n - taxa média de inflação ultimos 10 anos (2012 - 2013): 7,7%; \n - rentabilidade IBOV 2023: 11,12%; \n - rentabilidade IBOV ultimos 10 anos (2012-2013): 90%;" \n\n  Faça uma sugestão de melhoria na alocação dos recursos no mesmo formato percentual anterior e indicando como "valor disponível em caixa", caso o somatório total seja inferior a 100% da estratégia de investimentos a seguir: \n' + '"' + txtEstrategia.innerText + '"'; 
     
 }
 
@@ -17,7 +17,7 @@ function IniciaChat(){
 const divConsultaChat = document.getElementById('consulta-chat');
 
 // Chave da API do OPENAI
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "";//INCLUIR O TOKEN DENTRO DA ASPAS AO LADO
 
 // Verificar se tem a chave
 if(OPENAI_API_KEY === ""){
@@ -41,7 +41,7 @@ if (divConsultaChat) {
         //console.log(pergunta);
 
         // Enviar o texto da pergunta para a página HTML
-        document.getElementById('pergunta').innerHTML = pergunta;
+        document.getElementById('pergunta').innerHTML = "<u>Pergunta</u>: " + pergunta;
         
         // Limpar a resposta
         document.getElementById('resposta').innerHTML = "<span></span>";
@@ -71,12 +71,12 @@ if (divConsultaChat) {
             .then((resposta) => resposta.json())
             .then((dados) => {
                 // Enviar o texto da resposta para a página HTML
-                document.getElementById('resposta').innerHTML = dados.choices[0].text;
+                document.getElementById('resposta').innerHTML = "<u>Resposta</u>:  " + dados.choices[0].text;
             })
             // Retorna catch quando gerar erro
             .catch(() => {
                 // Enviar o texto da resposta para a página HTML
-                document.getElementById('resposta').innerHTML = "Sem resposta";
+                document.getElementById('resposta').innerHTML = "<u>Sem resposta</u>";
             });
 
         // Substituir o texto do botão para "Enviar"

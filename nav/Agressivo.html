@@ -10,25 +10,25 @@
 
 <body>
     <header>
-    
+
         <div class="container-header">
             <div class="logo-invest">
                 <img class="logo-invest-img" src="../img/LogoUvaInvest.png">
             </div>
-    
+
             <div class="page-title">
-                <p class="purples">Página Inicial</p>
+                <p class="purples">Perfil</p>
             </div>
-    
+
             <div class="logo-uva">
                 <img class="logo-uva-img" src="../img/logoUva.png">
             </div>
         </div>
-    
+
     </header>
-    
+
     <div class="container">
-        
+
         <div class="anuncia-perfil">
             <p>Seu perfil de investidor é: </p>
             <span> Agressivo!</span>
@@ -47,8 +47,8 @@
             <p id="txtEstrategia">
                 Para o seu perfil, a estratégia de investimento mais adequada consiste em:<br>
                 25% em CDB<br>
-                25% Fundos de Investimentos em Renda Fixa<br> 
-                15% em Fundos de Investimentos Cambial<br> 
+                25% Fundos de Investimentos em Renda Fixa<br>
+                15% em Fundos de Investimentos Cambial<br>
                 20% em Ações/ETF<br>
                 15% em Fundos de Investimento no Exterior<br><br>
                 Totalizando 100% do capital aplicável!
@@ -57,11 +57,15 @@
 
         <div class="anuncia-chatgpt">
             <p>
-                Caso queira saber mais a respeito da sua estratégia, informe-se com a Inteligência Artificial abaixo!
+                Essa é uma recomendação básica para o seu perfil.
+                Através de nossa ferramenta de inteligência artificial, disponibilizamos para nossos assinantes uma
+                recomendação aprofundada no cenário atual.
+                Para ter acesso, clique no botão abaixo
             </p>
         </div>
-        
-        <button id="btnIniciaChat" class="btnIniciaChat" onclick="IniciaChat()">Consultar</button>
+        <div class="container-btn">
+            <button class="button" style="vertical-align:middle" id="btnIniciaChat" onclick="IniciaChat()"><span>Consultar</span></button>
+        </div>
         <form id="consulta-chat" class="consulta-chat">
             <textarea id="txt-area" class="txt-consulta"></textarea>
             <input type="submit" id="btnSendChat" class="btnSendChat">
@@ -75,7 +79,7 @@
 
         </div>
     </div>
-    
+
     <script src="../js/ChatGptAPI.js"></script>
 </body>
 

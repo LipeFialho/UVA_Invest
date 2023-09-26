@@ -17,7 +17,7 @@
             </div>
     
             <div class="page-title">
-                <p class="purples">Página Inicial</p>
+                <p class="purples">Perfil</p>
             </div>
     
             <div class="logo-uva">
@@ -57,11 +57,17 @@
 
         <div class="anuncia-chatgpt">
             <p>
-                Caso queira saber mais a respeito da sua estratégia, informe-se com a Inteligência Artificial abaixo!
+                Essa é uma recomendação básica para o seu perfil.
+                Através de nossa ferramenta de inteligência artificial, disponibilizamos para nossos assinantes uma
+                recomendação aprofundada no cenário atual.
+                Para ter acesso, clique no botão abaixo
             </p>
         </div>
 
-        <button id="btnIniciaChat" class="btnIniciaChat" onclick="IniciaChat()">Consultar</button>
+        <div class="container-btn">
+            <button class="button" style="vertical-align:middle" id="btnIniciaChat" onclick="IniciaChat()"><span>Consultar</span></button>
+        </div>
+        
         <form id="consulta-chat" class="consulta-chat">
             <textarea id="txt-area" class="txt-consulta"></textarea>
             <input type="submit" id="btnSendChat" class="btnSendChat">

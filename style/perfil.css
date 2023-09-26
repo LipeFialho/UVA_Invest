@@ -1,3 +1,170 @@
-.consulta-chat{
+.anuncia-perfil {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.anuncia-perfil p {
+    color: #004b78;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 4.2px;
+    line-height: 1.6;
+}
+
+.anuncia-perfil span {
+    color: #ffd000;
+    text-shadow: 2.5px 1.5px 1.5px rgb(48, 14, 199); 
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.resumo-perfil{
+    color: #004b78;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    line-height: 1.3;
+}
+
+.estrategia p{
+
+    color: #004b78;
+    text-shadow: 1.5px 0.5px 0.5px rgba(255,208,0,1);
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    line-height: 1.3;
+}
+
+.anuncia-chatgpt{
+    color: #004b78;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+    letter-spacing: 2.8px;
+    line-height: 1.3;
+}
+.container-btn{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 5% auto 0 auto;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffd000;
+    border: none;
+    color: #004b78;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px 80px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .consulta-chat{
     display: none;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-consulta{
+    width: 70%;
+    height: 320px;
+    background: #71a71c42;
+}
+
+.btnSendChat{
+    height: 100px;
+    margin: 0 0 0 2%;
+    width: 12%;
+    border-radius: 15px;
+    box-shadow: 5px 9px #999;
+    background-color: #ffd000;
+    border: none;
+    color: #004b78;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 25px;
+    
+}
+
+.btnSendChat:hover {background-color: #d6b211}
+
+.btnSendChat:active {
+  background-color: #d6b211;
+  box-shadow: 5px 9px #666;
+  transform: translateY(4px);
+}
+
+#pergunta{
+    color: #004b78;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+    letter-spacing: 2.4px;
+    line-height: 1.3;
+    margin: 2% auto;
+}
+
+#resposta{
+    color: #004b78;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+    letter-spacing: 2.4px;
+    line-height: 1.3;
+    margin: 2% auto 5% auto;
 }
